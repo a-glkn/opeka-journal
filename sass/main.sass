@@ -1,0 +1,273 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #a3a2a2
+
+::selection
+	background-color: $accent
+	color: #fff
+
+*
+	outline: none !important
+	margin: 0
+	padding: 0
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.375
+	font-family: $default-font
+	overflow-x: hidden
+	background-color: #fafafa
+	color: $text
+
+
+
+.header
+	background-color: #fff
+	box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05)
+	.menu-btn
+		width: 24px
+		height: 24px
+		position: absolute
+		top: 18px
+		right: 15px
+		cursor: pointer
+		display: none
+		i
+			left: 2px
+			top: 5px
+			background-color: #7E8CA0
+			width: 20px
+			height: 2px
+			position: absolute
+			&:before
+				content: ''
+				display: block
+				background-color: #7E8CA0
+				width: 20px
+				height: 2px
+				bottom: -6px
+				left: 0
+				position: absolute
+			&:after
+				content: ''
+				display: block
+				background-color: #7E8CA0
+				width: 20px
+				height: 2px
+				bottom: -12px
+				left: 0
+				position: absolute
+
+	.container
+		position: relative
+	.logo
+		display: block
+		width: 70.35px
+		height: 68.25px
+		img
+			width: 70.35px
+			height: 68.25px
+	
+
+	&__menu
+		margin: 0
+		ul
+			margin: 0
+			display: flex
+			justify-content: space-between
+			li
+				list-style: none
+				a
+					color: $text
+					font-size: 16px
+					transition: .3s ease
+					text-decoration: none
+					&:hover
+						color: $accent
+
+	.form
+		&_search
+			width: 100%
+
+	&__phones
+		font-size: 18px
+		text-align: right
+		font-weight: bold
+		a
+			color: #8a8a8a
+		&_main
+			a
+				font-size: 20px
+				color: $accent
+
+
+
+.main
+	margin-top: 50px
+	.link-block
+		margin-bottom: 20px
+
+	.card
+		margin-bottom: 30px
+
+.row-recipe
+	img
+		max-width: 100%
+		height: auto
+
+
+.row-dementia-imgs, .card_dementia
+	img
+		max-width: 100%
+		height: auto
+
+.table-pros-cons
+	width: 100%
+	th
+		font-size: 22px
+		font-weight: 500
+		text-align: center
+		border-bottom: 1px solid #efefef
+		padding-bottom: 15px
+	td
+		border-bottom: 1px solid #efefef
+		padding-left: 98px
+		position: relative
+		padding-right: 70px
+		width: 50%
+		div
+			min-height: 100px
+			display: flex
+			padding-top: 15px
+			padding-bottom: 15px
+			span
+				margin-top: auto
+				margin-bottom: auto
+		img
+			display: inline-block
+			width: 52px
+			position: absolute
+			position: absolute
+			top: 50%
+			left: 20px
+			margin-top: -30px
+		&:nth-child(2)
+			background-color: #fff4f5
+	&_dementia
+		position: relative
+		th
+			font-size: 20px
+			text-align: left
+		&:after
+			content: ''
+			display: block
+			width: 306px
+			height: 536px
+			position: absolute
+			right: 15px
+			bottom: 25px
+			background-image: url(../img/babka.png)
+		td,th
+			padding-left: 15px
+			padding-right: 15px
+			width: 33.333%
+			&:nth-child(2)
+				width: 66.666%
+
+.footer
+	margin-top: 30px
+	.logo
+		width: 102px
+		height: 99px
+		margin-top: 20px
+		img
+			width: 102px
+			height: 99px
+	&__menu
+		margin: 0
+		border-top: 1px solid #efefef
+		border-bottom: 1px solid #efefef
+		padding-top: 15px
+		padding-bottom: 15px
+		ul
+			display: flex
+			margin: 0
+			li
+				list-style: none
+				margin-left: 50px
+				a
+					color: $text
+					font-size: 16px
+					transition: .3s ease
+					text-decoration: none
+					&:hover
+						color: $accent
+
+	&__phones
+		margin-top: 35px
+		font-size: 18px
+		text-align: right
+		font-weight: bold
+		a
+			color: #8a8a8a
+		&_main
+			a
+				font-size: 20px
+				color: $accent
+	&__foot
+		margin-top: 20px
+		padding-top: 5px
+		padding-bottom: 5px
+		border-top: 1px solid #efefef
+	&__info
+		font-size: 16px
+		p
+			margin: 1em 0
+			color: $text
+		a
+			color: $text
+			&:hover
+				text-decoration: none
+				color: $accent
+	.form_sub
+		float: right
+		width: 460px
+		.form__heading
+			text-align: right
+			margin-bottom: 1em
+
+
+	.soc
+		text-align: right
+		margin-top: 17px
+		li
+			width: 24px
+			height: 19px
+			margin-left: 30px
+			list-style-type: none
+			display: inline-block
+			a
+				width: 24px
+				height: 19px
+				svg
+					margin: auto
+					display: flex
+					height: 19px
+					width: auto
+					max-width: 24px
+					path
+						transition: .3s ease
+
+				&:hover
+					svg
+						path
+							fill: $accent
+@import "media" // Always at the end

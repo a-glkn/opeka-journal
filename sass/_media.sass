@@ -68,7 +68,10 @@
                 width: 50%
                 &:nth-child(2)
                     width: 50%
-
+    .links-panel
+        &__item
+            a
+                font-size: 16px
 +media-breakpoint-down(md)
     .card
         &:hover
@@ -127,6 +130,13 @@
         &__text
             padding-left: 10px
             font-size: 16px
+    .links-panel
+        flex-wrap: wrap
+        &__item
+            width: 50%
+            a
+                padding-top: 20px
+                padding-bottom: 20px
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -166,6 +176,7 @@
                 margin-top: -17px
             padding-right: 15px
             padding-left: 15px
+            
 // ≥576px
 +media-breakpoint-down(xs)
     .icon-item_nummed
@@ -192,6 +203,29 @@
         .question
             &__answers
                 margin-left: 25px
+
+    .links-panel
+        &__item
+            width: 100%
+            text-align: center
+            a
+                width: 100%
+                padding-top: 20px
+                padding-bottom: 20px
+
+    
+    .pagination
+        &__element
+            margin-left: 7.5px
+            margin-right: 7.5px
+            a, span
+                width: 32px
+                height: 32px
+                line-height: 32px
+
+        &__arrow
+            &_prev, &_next
+                margin-top: 5px
 /*==========  Mobile First  ==========*/
 
 // ≤576px

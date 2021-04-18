@@ -399,6 +399,24 @@ p.lg
 
         .card__heading
             padding-top: .5em
+    .card__meta_bottom
+        border: 0
+   
+    &_video
+        padding-bottom: 30px
+        height: 100%
+        .card__meta_bottom
+            position: absolute
+            bottom: 0
+        bottom: 0
+        .card__meta-date
+            margin-left: 0
+
+        .card__meta-tags
+            margin-left: 0
+
+.col-video-item
+    margin-bottom: 30px
 .card__share
     .ya-share2__item .ya-share2__link
         width: 25px
@@ -755,9 +773,91 @@ p.lg
                     position: absolute
                 
 
+.links-panel
+    display: flex
+    justify-content: space-between
+    width: 100%
+    background-color: #fff
+    &__item
+        a
+            display: inline-block
+            text-decoration: none
+            font-size: 22px
+            color: #8a8a8a
+            padding-left: 40px
+            padding-right: 40px
+            padding-top: 31.5px
+            padding-bottom: 31.5px
+            transition: .3s ease
+            &:hover
+                color: #2a2a2a
+        &_active
+            a
+                color: #2a2a2a
+                position: relative
+                &:after
+                    content: ''
+                    display: block
+                    width: 118px
+                    height: 1px
+                    background-color: #076197
+                    position: absolute
+                    bottom: 0
+                    left: 50%
+                    margin-left: -59px
 
 
-  
+.pagination
+    display: flex
+    justify-content: center
+    &__arrow
+        &_prev, &_next
+            transition: .3s ease
+            width: 11px
+            height: 22px
+            margin-left: 5px
+            margin-right: 5px
+            margin-top: 12px
+            &:after
+                content: ''
+                display: block
+                background-image: url(../img/pagi-arr.png)
+                background-repeat: no-repeat
+                background-position: 0 0
+                width: 11px
+                height: 22px
+            &:hover
+                opacity: 1
+        &_prev
+            &:after
+                transform: rotate(180deg) 
+        &_disabled
+            cursor: default
+            filter: grayscale(100%)
+    
+    &__element
+        margin-left: 12.5px
+        margin-right: 12.5px
+        a, span
+            display: inline-block
+            width: 46px
+            height: 46px
+            line-height: 46px
+            border: 1px solid #efefef
+            font-size: 16px
+            color: #2a2a2a
+            text-align: center
+            background-color: #fff
+            border-radius: 50%
+            text-decoration: none
+            transition: .3s ease
+        &_active
+            a, span
+                border-color: #0d6599
+        &:hover
+            a
+                border-color: #0d6599
+
 .breadcrumbs
     font-size: 14px
     color: #2a2a2a

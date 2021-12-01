@@ -33,6 +33,12 @@ $(function() {
   });
           
 
+  $('.mobile-menu li.has-dropdown > a').on('click', function (e) {
+
+    $(this).parents('li').toggleClass('active');
+
+  });
+
 	// $('.form__input_phone').inputmask("+7 (999) 999 99 99");  //static mask
 
 

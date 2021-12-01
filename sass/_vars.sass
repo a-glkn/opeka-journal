@@ -527,8 +527,49 @@ p.lg
                 display: block
                 text-align: center
                 a
+                    padding: 8px 15px
                     font-size: 18px
                     color: $accent
+                    text-decoration: none
+                &.has-dropdown
+                    position: relative
+                    >a
+                        padding-right: 40px
+                        position: relative
+                        text-decoration: none
+                        &:after
+                            position: absolute
+                            content: ''
+                            display: block
+                            width: 12px
+                            height: 7px
+                            right: 12px
+                            top: 16px
+                            background-repeat: no-repeat
+                            background-position: bottom
+                            background-image: url(../img/arrows.png)
+
+                &.active
+                    .sub
+                        display: block
+                &.has-accent
+                    >a
+                        padding-right: 12px+19px
+                        position: relative
+                        border: 1px solid #00669b
+                        border-radius: 6px
+                        &:after
+                            background-position: bottom
+                .sub
+                    display: none
+                    ul
+                        margin-top: 1em
+                        li
+                            margin: 0.5em 0
+                            a
+                                font-size: 16px
+                                color: $text
+                                
 
 .banner
     background-repeat: no-repeat

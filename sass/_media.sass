@@ -143,7 +143,34 @@
             a
                 padding-top: 20px
                 padding-bottom: 20px
+    .pt
+        padding-top: 50px
+    .pb
+        padding-bottom: 50px
+    .pt-lg
+        padding-top: 70px
+    .pb-lg
+        padding-bottom: 70px
 
+    .num-list
+        display: block
+        &__item
+            width: 100%
+
+    .icons-list 
+        &__item
+            width: 100%
+            &:nth-child(2)
+                border-top: 1px solid #ebebeb
+            &-content
+                &_lg
+                    font-size: 18px
+    .icons-list 
+        &_three-cols
+            .icons-list 
+                &__item
+                    border: 0
+                    width: 50% !important
 // ≥768px
 +media-breakpoint-down(sm)
     .heading

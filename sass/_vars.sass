@@ -25,6 +25,10 @@ $gutter: $grid-gutter-width
 .text-red
     color: #f17a89
 
+
+.text-center
+    text-align: center
+
 .text-right
     text-align: right
 
@@ -100,12 +104,10 @@ p.lg
         font-size: 32px !important
         font-weight: 500
         color: $text
-
     &_xmd
         font-size: 30px !important
         font-weight: 500
         color: $text
-
     &_xsmd
         font-size: 25px !important
         font-weight: 500
@@ -119,6 +121,11 @@ p.lg
         min-height: 66px
     &_highlighted
         border-bottom: 1px solid #efefef
+
+
+.fw-n
+    font-weight: normal !important
+
 .form
     &__heading
         font-size: 14px
@@ -1160,3 +1167,28 @@ p.lg
 				&-text
 					color: #626262
 					font-size: 20px
+
+.price-line
+    padding-top: 40px
+    padding-bottom: 40px
+    box-shadow: 0px 10px 5px 0px rgba(171, 171, 171, 0.15)
+    border-radius: 6px
+    padding-left: 20px
+    padding-right: 20px
+    transition: .3s ease
+    border: 1px solid #fff
+    margin-bottom: 10px
+    p
+        margin: 0
+    .heading
+        color: #076197
+
+    &:hover
+        border-color: #00669b
+        background-color: #f4fcff
+
+.border-block
+    padding: 30px
+    border-radius: 6px
+    border: 1px solid #00669b  
+    
